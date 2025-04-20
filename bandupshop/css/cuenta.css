@@ -1,0 +1,103 @@
+:root {
+    --primario: #282d35;
+    --primarioClaro: #374a5d;
+    --secundario: #dc454d;
+    --gris: #dddddd;
+    --blanco: #ffffff;
+}
+
+body {
+    background-color: var(--blanco);
+    color: var(--primario);
+    font-family: 'Montserrat', sans-serif;    
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.contenedor{
+    width: 100%;
+    padding: 15px;
+    align-items: center;
+}
+
+.formulario {
+    background: 150px;
+    padding: 3px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--primario);
+    font-size: 40px;
+}
+
+input[type="text"],
+input[type="password"]{
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+    
+    padding: 1em;
+    
+    background: none;
+    border-bottom: 1px solid var(--secundario);
+    outline: none;
+}
+
+.input-copntenedor{
+    margin-bottom: 15px;
+    border: 1px;
+}
+
+.icon{
+    min-width: 50px;
+    text-align: center;
+    color: var(--primarioClaro);
+}
+
+.button{
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    background: var(--secundario);
+    color: var(--blanco);
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus{
+    background: var(--primarioClaro);
+    color: var(--blanco);
+    transition: bacground-color 1s ease-out;
+    outline: 0px;
+}
+
+p{
+    text-align: center;
+}
+
+.link{
+    text-decoration: none;
+    color: var(--primario);
+    font-weight: 600;
+}
+
+.link:hover{
+    color: var(--secundario);
+}
+
+@media(min-width:768px){
+    .formulario{
+        margin: auto;
+        width: 500px;
+        margin-top: 100px;
+    }
+
+    .contenedor{
+        width: 800px;
+        margin: auto;
+    }
+}

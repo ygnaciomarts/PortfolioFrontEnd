@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <!-- GOOGLE FONTs -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/c80fbc750b.js" crossorigin="anonymous"></script>
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/cuenta.css">
+  	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  	<nav class="nav">
+        <ul class="menu">
+            <li><a href="https://bandup.monkeydevs.mx">INICIO</a></li>
+            <li><a href="quienessomos.html">QUIÉNES SOMOS</a></li>
+            <li><a href="#">CATÁLOGO</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+            
+        </ul>
+    </nav>
+    <nav class="nav-reg">
+        <ul class="menu">
+            <li><a href="registro.html">MI CUENTA</a></li>
+            <li><a href="wishlist.html">WISHLIST</a></li>
+        </ul>
+    </nav>
+    <div class="logo">
+        <a href="https://bandup.monkeydevs.mx">
+            <img src="/img/BandUp.svg" width="160">
+        </a>
+    </div>
+
+    <form class="formulario" id="form1" name="form1" method="post" action="registroAlta.php"><h1>Registrate</h1>
+    <div class="contenedor">
+        <div class="input-contenedor Nombre">
+            <i class="fa-regular fa-user icon"></i>
+            <input name="nombre" type="text" placeholder="Nombre">
+        </div>
+        <div class="input-contenedor Nombre">
+            <i class="fa-regular fa-user icon"></i>
+            <input name="apellido" type="text" placeholder="Apellido">
+        </div>
+        <div class="input-contenedor">
+            <i class="fa-regular fa-user icon"></i>
+            <input name="nombreU" type="text" placeholder="Nombre de usuario">
+        </div>
+        <div class="input-contenedor">
+            <i class="fa-regular fa-envelope icon"></i>
+            <input name="correo" type="text" placeholder="Correo electronico">
+        </div>
+        <div class="input-contenedor">
+            <i class="fa-solid fa-lock icon"></i>
+            <input name="password" type="password" placeholder="Contraseña">
+        </div>
+        <br>
+        <input type="checkbox" name="terminos"><label for="terminos">Acepto los terminos y condiciones</label> <br>
+        
+        <br>
+        <input type="submit" value="Registrate" class="button" >
+
+        <p>Al registrarte, aceptas nuestras condiciones y politicas
+            de privacidad.
+        </p>
+        <p>¿Ya tienes cuenta? <a class="link" href="login.html">Iniciar sesión</a></p>
+    </div>
+</form>
+</body>
+</html>
